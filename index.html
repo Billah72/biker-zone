@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker zone</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Font Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              primaryColor: "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-poppins">
+    <header>
+      <!-- navbar -->
+      <div class="container mx-auto navbar bg-transparent">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="font-semibold text-xl">Biker Zone</a>
+        </div>
+        <div class="hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-primaryColor text-white">Login</a>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="container mx-auto px-4">
+        <div class="carousel w-full">
+          <!-- Slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-8 p-6 md:p-12 lg:p-24 bg-[#e76f51]/10 rounded-md w-full"
+            >
+              <div class="w-full lg:w-1/2 space-y-4 md:space-y-6">
+                <h2
+                  class="font-bold text-3xl md:text-5xl lg:text-6xl leading-tight"
+                >
+                  Ride-on R15 V4 with Smile
+                </h2>
+                <p class="text-sm md:text-base font-light max-w-md">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit..
+                </p>
+                <button
+                  class="btn bg-primaryColor border-none w-full sm:w-40 h-12 md:h-16 rounded-md"
+                >
+                  Purchase
+                </button>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="./images/slider/bike1.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute left-2 right-2 md:left-5 md:right-5 top-3/4 md:top-1/2 flex justify-between transform -translate-y-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle btn-sm md:btn-md">❮</a>
+              <a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-8 p-6 md:p-12 lg:p-24 bg-[#e76f51]/10 rounded-md w-full"
+            >
+              <div class="w-full lg:w-1/2 space-y-4 md:space-y-6">
+                <h2
+                  class="font-bold text-3xl md:text-5xl lg:text-6xl leading-tight"
+                >
+                  Ride-on R15 V4 with Smile
+                </h2>
+                <p class="text-sm md:text-base font-light max-w-md">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit..
+                </p>
+                <button
+                  class="btn bg-primaryColor border-none w-full sm:w-40 h-12 md:h-16 rounded-md"
+                >
+                  Purchase
+                </button>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="./images/slider/bike2.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute left-2 right-2 md:left-5 md:right-5 top-3/4 md:top-1/2 flex justify-between transform -translate-y-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❮</a>
+              <a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-8 p-6 md:p-12 lg:p-24 bg-[#e76f51]/10 rounded-md w-full"
+            >
+              <div class="w-full lg:w-1/2 space-y-4 md:space-y-6">
+                <h2
+                  class="font-bold text-3xl md:text-5xl lg:text-6xl leading-tight"
+                >
+                  Ride-on R15 V4 with Smile
+                </h2>
+                <p class="text-sm md:text-base font-light max-w-md">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit..
+                </p>
+                <button
+                  class="btn bg-primaryColor border-none w-full sm:w-40 h-12 md:h-16 rounded-md"
+                >
+                  Purchase
+                </button>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="./images/slider/bike3.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute left-2 right-2 md:left-5 md:right-5 top-3/4 md:top-1/2 flex justify-between transform -translate-y-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❮</a>
+              <a href="#slide4" class="btn btn-circle btn-sm md:btn-md">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-8 p-6 md:p-12 lg:p-24 bg-[#e76f51]/10 rounded-md w-full"
+            >
+              <div class="w-full lg:w-1/2 space-y-4 md:space-y-6">
+                <h2
+                  class="font-bold text-3xl md:text-5xl lg:text-6xl leading-tight"
+                >
+                  Ride-on R15 V4 with Smile
+                </h2>
+                <p class="text-sm md:text-base font-light max-w-md">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit..
+                </p>
+                <button
+                  class="btn bg-primaryColor border-none w-full sm:w-40 h-12 md:h-16 rounded-md"
+                >
+                  Purchase
+                </button>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="./images/slider/bike4.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute left-2 right-2 md:left-5 md:right-5 top-3/4 md:top-1/2 flex justify-between transform -translate-y-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❮</a>
+              <a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- card section  -->
+      <section class="container mx-auto my-6 px-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        >
+          <!-- Card 1 -->
+          <div class="card bg-base-100 shadow-sm">
+            <figure>
+              <img
+                src="./images/others/latest1.png"
+                alt="latest1"
+                class="w-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="card-title font-semibold text-left text-2xl md:text-3xl mb-2"
+              >
+                Ducati XDIAVEL S-73
+              </h2>
+              <p
+                class="font-normal text-sm md:text-base text-[rgba(108,108,108,1)]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions mt-4">
+                <button
+                  class="btn bg-primaryColor border-none p-3 md:p-4 w-full md:w-auto"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-base-100 shadow-sm">
+            <figure>
+              <img
+                src="./images/others/latest2.png"
+                alt="latest1"
+                class="w-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="card-title font-semibold text-left text-2xl md:text-3xl mb-2"
+              >
+                Ducati XDIAVEL S-73
+              </h2>
+              <p
+                class="font-normal text-sm md:text-base text-[rgba(108,108,108,1)]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions mt-4">
+                <button
+                  class="btn bg-primaryColor border-none p-3 md:p-4 w-full md:w-auto"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-base-100 shadow-sm">
+            <figure>
+              <img
+                src="./images/others/latest3.png"
+                alt="latest1"
+                class="w-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h2
+                class="card-title font-semibold text-left text-2xl md:text-3xl mb-2"
+              >
+                Ducati XDIAVEL S-73
+              </h2>
+              <p
+                class="font-normal text-sm md:text-base text-[rgba(108,108,108,1)]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions mt-4">
+                <button
+                  class="btn bg-primaryColor border-none p-3 md:p-4 w-full md:w-auto"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Q&A section start -->
+
+      <section class="container mx-auto my-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Left Image -->
+          <div class="flex justify-center md:justify-start">
+            <img
+              class="w-full max-w-[420px] rounded-xl shadow-lg"
+              src="images/others/faq.png"
+              alt="FAQ Image"
+            />
+          </div>
+
+          <!-- Right Accordion -->
+          <div class="space-y-4">
+            <div
+              class="collapse collapse-arrow bg-white border border-gray-300 rounded-lg shadow-sm"
+            >
+              <input type="radio" name="accordion" checked="checked" />
+              <div class="collapse-title font-semibold">
+                How do I create an account?
+              </div>
+              <div class="collapse-content text-sm text-gray-600">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+
+            <div
+              class="collapse collapse-arrow bg-white border border-gray-300 rounded-lg shadow-sm"
+            >
+              <input type="radio" name="accordion" />
+              <div class="collapse-title font-semibold">
+                I forgot my password. What should I do?
+              </div>
+              <div class="collapse-content text-sm text-gray-600">
+                Click on "Forgot Password" on the login page and follow the
+                instructions sent to your email.
+              </div>
+            </div>
+
+            <div
+              class="collapse collapse-arrow bg-white border border-gray-300 rounded-lg shadow-sm"
+            >
+              <input type="radio" name="accordion" />
+              <div class="collapse-title font-semibold">
+                How do I update my profile information?
+              </div>
+              <div class="collapse-content text-sm text-gray-600">
+                Go to "My Account" settings and select "Edit Profile" to make
+                changes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Q&A section end -->
+    </main>
+    <!-- footer section -->
+    <footer class="bg-[#0A0C14] text-gray-200 py-10 px-5">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10"
+      >
+        <!-- Left -->
+        <div class="space-y-5">
+          <div class="flex flex-wrap gap-6">
+            <a href="#" class="hover:text-white font-medium">Download Now</a>
+            <a href="#" class="hover:text-white font-medium">License</a>
+          </div>
+
+          <div class="flex flex-wrap gap-6 text-sm text-gray-400">
+            <a href="#" class="hover:text-white">About</a>
+            <a href="#" class="hover:text-white">Features</a>
+            <a href="#" class="hover:text-white">Pricing</a>
+            <a href="#" class="hover:text-white">Careers</a>
+            <a href="#" class="hover:text-white">Help</a>
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+          </div>
+
+          <p class="text-xs text-gray-500">© 2020 blaz. All rights reserved.</p>
+        </div>
+
+        <!-- Right -->
+        <div class="flex flex-col items-start md:items-end gap-3">
+          <p class="text-sm text-gray-400">Get the App</p>
+
+          <div class="flex flex-col md:flex-row gap-3">
+            <!-- App Store -->
+            <a
+              href="#"
+              class="flex flex-col border border-gray-600 rounded-lg px-4 py-2 hover:border-white"
+            >
+              <span
+                class="text-[10px] uppercase tracking-wide text-gray-400 leading-3"
+                >Download on the</span
+              >
+              <span class="text-[15px] font-semibold leading-4">App Store</span>
+            </a>
+
+            <!-- Google Play -->
+            <a
+              href="#"
+              class="flex flex-col border border-gray-600 rounded-lg px-4 py-2 hover:border-white"
+            >
+              <span
+                class="text-[10px] uppercase tracking-wide text-gray-400 leading-3"
+                >GET IT ON</span
+              >
+              <span class="text-[15px] font-semibold leading-4"
+                >Google Play</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
